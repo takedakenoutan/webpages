@@ -8,12 +8,12 @@
 /*ヘッダー*/
 h1#h-title{
 	padding:30px;
-	color:#ffffff;
 	background-image:url("images/header-image.png");
 	background-repeat:no-repeat;
 }
 a#link-index{
 	text-decoration:none;
+	color:#ffffff;
 }
 /*左メニュー*/
 nav#navi{
