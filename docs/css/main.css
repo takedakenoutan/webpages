@@ -5,6 +5,11 @@
 	color:#000000;
 	background-color:#a6a6a6;
 }
+/*ヘッダー*/
+header{
+	color:#ffffff;
+	background-image:url("images/header-image.png");
+}
 /*左メニュー*/
 nav#navi{
 	width:150px;
