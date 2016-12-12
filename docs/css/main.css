@@ -6,23 +6,30 @@
 	background-color:#a6a6a6;
 }
 /*左メニュー*/
-#navi{
+nav#navi{
 	width:150px;
-	background-color:#82bedc !important;
+	background-color:#82bedc;
 	float:left;
 }
-#menu{
+h3#menutext{
+	background-color:#82bedc;
+}
+ul#menu{
 	list-style-type:none;
+	background-color:#82bedc;
+}
+li#menu01,li#menu02,li#menu03{
+	background-color:#82bedc;
 }
 /*中央右コンテンツ*/
-#content{
+div#content{
 	width:750px;
 	float:right;
 }
-#text{
+article#text{
 	float:left;
 }
-#address{
+address#address{
 	float:right;
 	margin:20px;
 }
