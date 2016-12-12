@@ -6,12 +6,12 @@
 	background-color:#a6a6a6;
 }
 /*ヘッダー*/
-/*h1#h-title{
+h1#h-title{
 	padding:30px;
 	color:#ffffff;
 	background-image:url("images/header-image.png");
 	background-repeat:no-repeat;
-}*/
+}
 /*左メニュー*/
 nav#navi{
 	width:150px;
