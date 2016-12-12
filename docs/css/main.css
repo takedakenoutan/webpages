@@ -1,6 +1,7 @@
 @cherset "UTF-8";
 
 #navi{
+	width:30px;
 	background-color:#82bedc;
 	float:left;
 }
