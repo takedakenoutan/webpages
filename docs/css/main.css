@@ -1,9 +1,14 @@
 @cherset "UTF-8";
 
+/*全体*/
+*{
+	color:#000000;
+	background-color:#a6a6a6;
+}
 /*左メニュー*/
 #navi{
 	width:150px;
-	background-color:#82bedc;
+	background-color:#82bedc !important;
 	float:left;
 }
 #menu{
