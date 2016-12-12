@@ -3,6 +3,6 @@ var writing ={
 		let html = '
 			<h1 id= "h-title">武田家のほむぺ</h1>
 		';
-		document.getElementById("header").innerHTML = html;
+		document./*getElementById("header").innerHTML*/write(html);
 	}
 };
