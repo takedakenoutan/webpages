@@ -6,9 +6,15 @@
 	background-color:#a6a6a6;
 }
 /*ヘッダー*/
-header{
+header#header{
+	
+}
+h1#h-title{
+	height:100px;
+	padding:30px;
 	color:#ffffff;
 	background-image:url("images/header-image.png");
+	background-repeat:no-repeat;
 }
 /*左メニュー*/
 nav#navi{
