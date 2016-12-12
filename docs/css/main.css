@@ -1,5 +1,6 @@
 @cherset "UTF-8";
 
+/*左メニュー*/
 #navi{
 	width:150px;
 	background-color:#82bedc;
@@ -8,10 +9,15 @@
 #menu{
 	list-style-type:none;
 }
+/*中央右コンテンツ*/
 #content{
 	width:750px;
 	float:right;
 }
 #text{
 	float:left;
+}
+#address{
+	float:right;
+	margin:20px;
 }
