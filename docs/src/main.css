@@ -20,8 +20,7 @@ nav#navi{
 }
 h3#menutext{
 	padding-left:30px;
-	min-height:10px;
-	min-width:50px;
+	transform:scale(2,1.2);
 	background-color:#82bedc;
 }
 ul#menu{
