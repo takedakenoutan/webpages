@@ -28,6 +28,9 @@ ul#menu{
 li#menu01{
 	background-color:#82bedc;
 }
+li#menu01 a{
+	background-color:#82bedc;
+}
 /*中央右コンテンツ*/
 div#content{
 	width:750px;
