@@ -12,6 +12,9 @@ h1#h-title{
 	background-image:url("images/header-image.png");
 	background-repeat:no-repeat;
 }
+a#link-index{
+	text-decoration:none;
+}
 /*左メニュー*/
 nav#navi{
 	width:150px;
