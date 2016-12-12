@@ -8,3 +8,10 @@
 #menu{
 	list-style-type:none;
 }
+#content{
+	width:750px;
+	float:right;
+}
+#text{
+	float:left;
+}
