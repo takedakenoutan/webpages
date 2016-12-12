@@ -21,7 +21,7 @@ nav#navi{
 h3#menutext{
 	padding-left:15px;
 	min-height:10px;
-	min-width:20px;
+	min-width:50px;
 	background-color:#82bedc;
 }
 ul#menu{
