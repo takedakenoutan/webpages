@@ -29,7 +29,7 @@ ul#menu{
 li#menu01,li#menu02{
 	background-color:#82bedc;
 }
-li#menu01 a{
+li#menu01 a,li#menu02 a{
 	background-color:#82bedc;
 }
 /*中央右コンテンツ*/
