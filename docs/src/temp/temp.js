@@ -1,6 +1,6 @@
 var writing ={
 	header : function(){
-		let html = '<h1 id= "h-title">武田家のほむぺ</h1>';
+		let html = '<h1 id= "h-title"><a href= "https://takedakenoutan.github.io/webpages/index.html">武田家のほむぺ</a></h1>';
 		document.getElementById("header").innerHTML = html;
 	},
 	navi : function(){
