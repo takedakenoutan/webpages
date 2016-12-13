@@ -9,7 +9,7 @@
 h1#h-title{
 	padding:30px;
 	color:#ffffff;
-	background-image:url("images/header-image.png");
+	background-image:url("../images/header-image.png");
 	background-repeat:no-repeat;
 }
 /*左メニュー*/
