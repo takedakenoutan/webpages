@@ -1,0 +1,6 @@
+@cherset "UTF-8";
+
+/*メインコンテンツ*/
+article#text{
+	float:left;
+}
