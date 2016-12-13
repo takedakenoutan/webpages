@@ -4,7 +4,12 @@ var writing ={
 		document.getElementById("header").innerHTML = html;
 	},
 	navi : function(){
-		let html = '<h3 id= "menutext">めにゅー</h3><ul id= "menu"><li id= "menu01"><a href="https://takedakenoutan.github.io/webpages/index.html">トップページ</a></li></ul>';
+		let html = '';
+		html += '<h3 id= "menutext">めにゅー</h3>';
+		html += '<ul id= "menu">';
+			html += '<li id= "menu01"><a href="https://takedakenoutan.github.io/webpages/index.html">トップページ</a></li><br>';
+			html += '<li id= "menu02">特に意味のないページ</li>';
+		html += '</ul>';
 		document.getElementById("navi").innerHTML = html;
 	},
 	address : function(){
