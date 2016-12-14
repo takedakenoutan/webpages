@@ -48,6 +48,6 @@ div#content{
 
 address#address{
 	min-width : 200;
-	clear : none;
+	float : right;
 	margin:5px;
 }
