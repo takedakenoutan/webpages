@@ -2,5 +2,6 @@
 
 /*メインコンテンツ*/
 article#text{
+	max-width : 500;
 	float:left;
 }
