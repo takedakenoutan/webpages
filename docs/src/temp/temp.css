@@ -48,7 +48,7 @@ div#content{
 
 address#address{
 	min-width : 200;
-	clear : right;
+	clear : left;
 	float : right;
 	margin:5px;
 }
