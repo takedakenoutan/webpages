@@ -2,7 +2,6 @@
 
 /*全体*/
 *{
-	width : 1000px;
 	color:#000000;
 	background-color:#a6a6a6;
 }
@@ -18,22 +17,18 @@ h1#h-title a{
 }
 /*左メニュー*/
 nav#navi{
-	width:150px;
 	background-color:#82bedc;
 	float:left;
 }
 h3#menutext{
-	max-width : 120px;
 	padding-left:30px;
 	background-color:#82bedc;
 }
 ul#menu{
-	max-width : 100px;
 	list-style-type:none;
 	background-color:#82bedc;
 }
 li#menu01,li#menu02{
-	max-width : 100px;
 	background-color:#82bedc;
 }
 li#menu01 a,li#menu02 a{
@@ -41,14 +36,11 @@ li#menu01 a,li#menu02 a{
 }
 /*中央右コンテンツ*/
 div#content{
-	width:750px;
 	float : right;
 	margin : 0;
 }
 
 address#address{
-	min-width : 200;
-	clear : left;
 	float : right;
 	margin:5px;
 }
