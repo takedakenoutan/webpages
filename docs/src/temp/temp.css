@@ -42,11 +42,11 @@ li#menu01 a,li#menu02 a{
 /*中央右コンテンツ*/
 div#content{
 	width:750px;
-	float:right;
 	margin : 0;
 }
 
 address#address{
 	min-width : 200;
+	float : right;
 	margin:5px;
 }
