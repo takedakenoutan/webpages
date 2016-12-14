@@ -13,7 +13,7 @@ var writing ={
 		document.getElementById("navi").innerHTML = html;
 	},
 	address : function(){
-		let html = '<div class="g-person" data-width="150" data-href="//plus.google.com/u/0/115038182927590902152" data-rel="author"></div>';
+		let html = '<div class="g-person" data-width="200" data-href="//plus.google.com/u/0/115038182927590902152" data-rel="author"></div>';
 		document.getElementById("address").innerHTML = html;
 	}
 };
