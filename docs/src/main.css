@@ -2,6 +2,6 @@
 
 /*メインコンテンツ*/
 article#text{
-	float : left;
+	float : right;
 	margin : 10px;
 }

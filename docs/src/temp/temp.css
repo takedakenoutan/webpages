@@ -15,6 +15,12 @@ h1#h-title{
 h1#h-title a{
 	text-decoration:none;
 }
+/*左中央コンテンツ*/
+div#content{
+	float : left;
+	margin : 0;
+}
+
 /*左メニュー*/
 nav#navi{
 	background-color:#82bedc;
@@ -34,12 +40,7 @@ li#menu01,li#menu02{
 li#menu01 a,li#menu02 a{
 	background-color:#82bedc;
 }
-/*中央右コンテンツ*/
-div#content{
-	float : right;
-	margin : 0;
-}
-
+/*右連絡先*/
 address#address{
 	float : right;
 	margin:5px;
