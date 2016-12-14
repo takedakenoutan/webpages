@@ -48,5 +48,6 @@ div#content{
 
 address#address{
 	min-width : 200;
+	clear : none;
 	margin:5px;
 }
