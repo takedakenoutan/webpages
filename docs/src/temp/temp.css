@@ -43,6 +43,7 @@ li#menu01 a,li#menu02 a{
 div#content{
 	width:750px;
 	float:right;
+	margin : 0;
 }
 
 address#address{
