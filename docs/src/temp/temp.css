@@ -23,14 +23,17 @@ nav#navi{
 	float:left;
 }
 h3#menutext{
+	max-width : 150px;
 	padding-left:30px;
 	background-color:#82bedc;
 }
 ul#menu{
+	max-width : 150px;
 	list-style-type:none;
 	background-color:#82bedc;
 }
 li#menu01,li#menu02{
+	max-width : 150px;
 	background-color:#82bedc;
 }
 li#menu01 a,li#menu02 a{
