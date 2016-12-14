@@ -46,6 +46,7 @@ div#content{
 }
 
 address#address{
+	min-width : 200;
 	float:right;
 	margin:20px;
 }
