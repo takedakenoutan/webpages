@@ -36,6 +36,7 @@ ul#menu{
 }
 li#menu01,li#menu02,li#menu03{
 	background-color:#82bedc;
+	margin-right : 5px;;
 }
 li#menu01 a,li#menu02 a,li#menu03 a{
 	background-color:#82bedc;
