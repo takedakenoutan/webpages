@@ -2,17 +2,14 @@
 	function()
 	{
 		var id, pass;
-		let AccessR = document.getElementsByTagName("AccessR");
-		for(var i = 0;i < AccessR[i].length;i++)
+		var AccessR = document.getElementsByTagName("AccessR");
+		if(AccessR[0].attributes["id"])
 		{
-			if(AccessR[i].attributes["id"])
-			{
-				id = AccessR[i];
-			}
-			if(AccessR[i].attributes["pass"])
-			{
-				pass = AccessR[i];
-			}
+			id = AccessR[0].getAttribute("id");
+		}
+		if(AccessR[0].attributes["pass"])
+		{
+			pass = AccessR[0].getAttribute("pass");
 		}
 		document.open();
 		document.write("Id : " + id + "\nPass : " + pass);
