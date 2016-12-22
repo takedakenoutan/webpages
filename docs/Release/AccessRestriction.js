@@ -14,5 +14,6 @@
 			}
 		}
 		document.write("Id : " + id + "\nPass : " + pass);
+		document.close();
 	}
 )();
