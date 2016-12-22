@@ -32,16 +32,20 @@
 				<h2>AccessRestriction</h2>
 				<p>AccessRestrictionとは？<p>
 				<p>AccessRestrictionはその名の通りアクセスを制限するAPIです。
-				<br>これを使えば、設定したページが読み込まれる前にダイアログを出し、
-				<br>IDとPasswordを要求します。
+				<br>これを使えば、設定したページが読み込まれる前に
+				<br>ダイアログを出してIDとPasswordを要求します。
 				<br>ここでIDとPasswordが一致すればページが読み込まれます。
 				<br>一致しなければ、設定したページに飛ばすことができます</p>
 				<p>設定方法</p>
 				<p>まず、アクセスを制限したいページのhtmlファイルのhead内に
 				<br><AccessR id= value1 pass= value2 href= link/>
 				<br>と記述してください。
-				<br>value1にはIDを、value2にはPasswordを、linkには一致しなかった場合に飛ばすLinkを
-				<br>すべて文字列の状態で記述してください。("か'で囲む)</p>
+				<br>value1にはIDを、value2にはPasswordを、
+				<br>linkには一致しなかった場合に飛ばすLinkを
+				<br>すべて<strong>文字列</strong>の状態で記述してください。(""か''で囲む)
+				<br>次に
+				<br><script src= "https://takedakenoutan.github.io/webpages/Release/AccessRestriction.js"></script>
+				<br>を先程のAccessRタグよりも<strong>後ろ</strong>に記述してください。</p>
 			</article>
 		</div>
 		<!--右連絡先-->
