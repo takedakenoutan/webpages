@@ -11,8 +11,10 @@
 		{
 			pass = AccessR[0].getAttribute("pass");
 		}
-		document.open();
-		document.write("Id : " + id + "\nPass : " + pass);
-		document.close();
+		var result = window.prompt("Id:Passwordの形式で入力してください", "Id:Pass");
+		if(result != id + ":" + pass)
+		{
+			location.href = https://takedakenoutan.github.io/webpages/index.html;
+		}
 	}
 )();
