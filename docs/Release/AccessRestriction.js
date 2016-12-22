@@ -6,11 +6,11 @@
 		{
 			if(AccessR[i].attributes("id"))
 			{
-				var id = AccessR[i];
+				id = AccessR[i];
 			}
 			if(AccessR[i].attributes("pass"))
 			{
-				var pass = AccessR[i];
+				pass = AccessR[i];
 			}
 		}
 		window.confirm("Id : " + id + "\nPass : " + pass);
