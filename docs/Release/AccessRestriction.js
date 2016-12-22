@@ -13,6 +13,7 @@
 				pass = AccessR[i];
 			}
 		}
+		document.open();
 		document.write("Id : " + id + "\nPass : " + pass);
 		document.close();
 	}
