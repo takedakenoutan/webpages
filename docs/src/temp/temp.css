@@ -34,11 +34,11 @@ ul#menu{
 	list-style-type:none;
 	background-color:#82bedc;
 }
-li#menu01,li#menu02,li#menu03,li#menu04{
+li#menu01,li#menu02,li#menu03,li#menu04,li#menu05{
 	background-color:#82bedc;
 	margin-right : 5px;;
 }
-li#menu01 a,li#menu02 a,li#menu03 a,li#menu04 a{
+li#menu01 a,li#menu02 a,li#menu03 a,li#menu04 a,li#menu05 a{
 	background-color:#82bedc;
 }
 /*右連絡先*/
