@@ -1,6 +1,7 @@
 (
 	function()
 	{
+		var id, pass;
 		let AccessR = document.getElementsByTagName("AccessR");
 		for(var i = 0;i < AccessR[i].length;i++)
 		{
