@@ -14,7 +14,7 @@
 		var result = prompt("Id:Passwordの形式で入力してください", "Id:Pass");
 		if(result != id + ":" + pass)
 		{
-			location.href = "https://takedakenoutan.github.io/webpages/404.html";
+			location.href = "https://takedakenoutan.github.io/webpages/Redirect.html";
 		}
 	}
 )();
