@@ -1,7 +1,7 @@
 (
 	function()
 	{
-		var id, pass;
+		var id, pass, href;
 		var AccessR = document.getElementsByTagName("AccessR");
 		if(AccessR[0].attributes["id"])
 		{
@@ -11,10 +11,14 @@
 		{
 			pass = AccessR[0].getAttribute("pass");
 		}
+		if(AccessR[0].attributes["href"])
+		{
+			href = AccessR[0].getAttribute("href");
+		}
 		var result = prompt("Id:Passwordの形式で入力してください", "Id:Pass");
 		if(result != id + ":" + pass)
 		{
-			location.href = "https://takedakenoutan.github.io/webpages/Redirect.html";
+			location.href = href;
 		}
 	}
 )();
