@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<mate cherset = "UTF-8">
+		<link rel="shortcut icon" href="../../../favicon.ico" >
+		<link rel= "stylesheet" type= "text/css" href= "src/main.css">
+		<!--テンプレ読み込み、テンプレ用スタイルシート読み込み-->
+		<script src= "../../src/temp/temp.js" charset="UTF-8"></script>
+		<link rel="stylesheet" tyoe= "text/css" href= "../../src/temp/temp.css">
+		<!--Google+埋め込み-->
+		<script src="https://apis.google.com/js/platform.js" async defer>
+			{lang: 'ja'}
+		</script>
+		<title>AccessRestriction</title>
+	</head>
+	<body>
+		<!--上部タイトル-->
+		<header id= "header">
+			適切に表示されていません。<br>
+			JavaScriptを有効にして再読込してください
+			<script> header();</script>
+		</header>
+		<!--左中央コンテンツ-->
+		<div id= "content">
+			<!--左メニュー-->
+			<nav id= "navi">
+				適切に表示されていません。<br>
+				JavaScriptを有効にして再読込してください
+				<script> navi();</script>
+			</nav>
+			<!--中央記事-->
+			<article id= "text">
+				<h2>AccessRestriction</h2>
+				<p><strong>AccessRestrictionとは？</strong><p>
+				<p>AccessRestrictionはその名の通りアクセスを制限するAPIです。
+				<br>これを使えば、設定したページが読み込まれる前に
+				<br>ダイアログを出してIDとPasswordを要求することができます。
+				<br>ここでIDとPasswordが一致すればページが読み込まれます。
+				<br>一致しなければ、設定したページに飛ばすことができます</p>
+				<p><strong>設定方法</strong></p>
+				<p>まず、アクセスを制限したいページのhtmlファイルのhead内に
+				<br>&lt;AccessR id= value1 pass= value2 href= link/&gt;
+				<br>と記述してください。
+				<br>value1にはIDを、value2にはPasswordを、
+				<br>linkには一致しなかった場合に飛ばすLinkを
+				<br>すべて<strong>文字列</strong>の状態で記述してください。(&quot;で囲む)
+				<br>次に
+				<br>&lt;script src= &quot;https://takedakenoutan.github.io/webpages/
+				<br>Release/AccessRestriction.js&quot;&gt;&lt;/script&gt;
+				<br>を先程のAccessRタグよりも<strong>後ろ</strong>に記述してください。</p>
+				<p><strong>使用例</strong></p>
+				<p><a href= "https://raw.githubusercontent.com/takedakenoutan/webpages/master/docs/sites/admin-sites/index.html">使用しているソースコードのLink</a></p>
+			</article>
+		</div>
+		<!--右連絡先-->
+		<address id= "address">
+			適切に表示されていません。<br>
+			JavaScriptを有効にして再読込してください
+			<script>address();</script>
+		</address>
+	</body>
+</html>
