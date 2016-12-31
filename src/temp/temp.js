@@ -10,7 +10,7 @@ function navi(){
 		text += '<li id= "menu02"><a href= "https://takedakenoutan.github.io/webpages/sites/test-sites/">特に意味のないページ</a></li><br/>';
 		text += '<li id= "menu03"><a href= "https://takedakenoutan.github.io/webpages/sites/info-sites/">自己紹介とか</a></li><br>';
 		text += '<li id= "menu04"><a href= "https://takedakenoutan.github.io/webpages/sites/admin-sites/">管理ページ</a></li><br>';
-		text += '<li id= "menu05"><a href= "https://takedakenoutan.github.io/webpages/sites/AccessRestriction-sites/">AccessRistriction</a></li>';
+		text += '<li id= "menu05"><a href= "https://takedakenoutan.github.io/webpages/sites/AccessRestriction-sites/">AccessRestriction</a></li>';
 	text += '</ul>';
 	document.getElementById("navi").innerHTML = text;
 }
