@@ -1,0 +1,36 @@
+フォルダ構成めも
+
+webpages(リポジトリのルートディレクトリ)
+┣━Release
+┃	┗AccessRestriction.js
+┣━sites
+┃	┣━AccessRestriction-sites
+┃	┃	┣━src
+┃	┃	┃	┗━main.css
+┃	┃	┗━index.html
+┃	┣━admin-sites
+┃	┃	┣━src
+┃	┃	┃	┗━main.css
+┃	┃	┗━index.html
+┃	┣━test-sites
+┃	┃	┣━src
+┃	┃	┃	┗━main.css
+┃	┃	┗━index.html
+┃	┗━info-sites
+┃		┣━src
+┃		┃	┗━main.css
+┃		┗━index.html
+┣━src
+┃	┣━images
+┃	┃	┗━header-image.png
+┃	┣━temp
+┃	┃	┣━temp.css
+┃	┃	┗━temp.js
+┃	┗━main.css
+┣━404.html
+┣━index.html
+┣━Redirect.html
+┣━favicon.ico
+┣━README.md
+┣━favicon.png
+┗━フォルダ構成めも.txt
