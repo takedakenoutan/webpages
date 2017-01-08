@@ -14,7 +14,7 @@ function navi(){
 		text += '<li id= "menu06"><a href= "https://takedakenoutan.github.io/webpages/sites/URLShortener-sites/">URLShortener</a></li>';
 	text += '</ul>';
 	document.getElementById("navi").innerHTML = text;
-}━━
+}
 function address(){
 	var text = '<div class="g-person" data-width="200" data-href="//plus.google.com/u/0/115038182927590902152" data-rel="author"></div>';
 	document.getElementById("address").innerHTML = text;
