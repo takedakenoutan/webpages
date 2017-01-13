@@ -1,5 +1,5 @@
 (function(){
-	var xhr = new XMLHttpRequest;
+	var xhr = new XMLHttpRequest();
 	xhr.open("https://takedakenoutan.github.io/webpages/src/config.json",false);
 	xhr.send(null);
 	var res = JSON.parse(xhr.response)["closed"];
