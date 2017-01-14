@@ -27,18 +27,22 @@ div#content{
 nav#navi{
 	background-color:#82bedc;
 	float:left;
+	max-width:160px;
 }
 h3#menutext{
-	padding-left:30px;
+	padding-left:10px;
 	background-color:#82bedc;
+	font-size:90%;
 }
 ul#menu{
+	padding-left:20px;
 	list-style-type:none;
 	background-color:#82bedc;
 }
 li#menu01,li#menu02,li#menu03,li#menu04,li#menu05,li#menu06{
 	background-color:#82bedc;
-	margin-right : 5px;;
+	margin : 5px;
+	font-size:80%;
 }
 li#menu01 a,li#menu02 a,li#menu03 a,li#menu04 a,li#menu05 a,li#menu06 a{
 	background-color:#82bedc;
@@ -46,5 +50,6 @@ li#menu01 a,li#menu02 a,li#menu03 a,li#menu04 a,li#menu05 a,li#menu06 a{
 /*右連絡先*/
 address#address{
 	float : right;
+	max-width:240px;
 	margin:5px;
 }
