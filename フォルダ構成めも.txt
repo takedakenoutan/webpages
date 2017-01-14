@@ -29,11 +29,15 @@ webpages(リポジトリのルートディレクトリ)
 ┣━src
 ┃	┣━images
 ┃	┃	┗━header-image.png
+┃	┣━script
+┃	┃	┗━closed.js
 ┃	┣━temp
 ┃	┃	┣━temp.css
 ┃	┃	┗━temp.js
-┃	┗━main.css
+┃	┣━main.css
+┃	┗━config.json
 ┣━404.html
+┣━Closed.html
 ┣━index.html
 ┣━Redirect.html
 ┣━favicon.ico
