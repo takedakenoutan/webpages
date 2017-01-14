@@ -38,9 +38,10 @@ webpages(リポジトリのルートディレクトリ)
 ┃	┗━config.json
 ┣━404.html
 ┣━Closed.html
-┣━index.html
 ┣━Redirect.html
 ┣━favicon.ico
 ┣━README.md
 ┣━favicon.png
+┣━index.html
+┣━testing.html
 ┗━フォルダ構成めも.txt
