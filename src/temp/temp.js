@@ -16,6 +16,8 @@ function navi(){
 	document.getElementById("navi").innerHTML = text;
 }
 function address(){
-	var text = '<div class="g-person" data-width="200" data-href="//plus.google.com/u/0/115038182927590902152" data-rel="author"></div>';
+	var text = '';
+	text += '<div class="g-person" data-width="200" data-href="//plus.google.com/u/0/115038182927590902152" data-rel="author"></div>';
+	text += '<p>ソースコードは<a href= "https://github.com/takedakenoutan/webpages">こちら</a></p>';
 	document.getElementById("address").innerHTML = text;
 }
