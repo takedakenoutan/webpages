@@ -1,39 +1,39 @@
 webpages(root)
 ┣━Release
-┃	┣━AccessRestriction.js
-┃	┗━URLShortener.js
+┃  ┣━AccessRestriction.js
+┃  ┗━URLShortener.js
 ┣━sites
-┃	┣━AccessRestriction-sites
-┃	┃	┣━src
-┃	┃	┃	┗━main.css
-┃	┃	┗━index.html
-┃	┣━URLShortener-sites
-┃	┃	┣━src
-┃	┃	┃	┣━main.css
-┃	┃	┃	┗━script.js
-┃	┃	┗━index.html
-┃	┣━admin-sites
-┃	┃	┣━src
-┃	┃	┃	┗━main.css
-┃	┃	┗━index.html
-┃	┣━info-sites
-┃	┃	┣━src
-┃	┃	┃	┗━main.css
-┃	┃	┗━index.html
-┃	┗━test-sites
-┃		┣━src
-┃		┃	┗━main.css
-┃		┗━index.html
+┃  ┣━AccessRestriction-sites
+┃  ┃  ┣━src
+┃  ┃  ┃  ┗━main.css
+┃  ┃  ┗━index.html
+┃  ┣━URLShortener-sites
+┃  ┃  ┣━src
+┃  ┃  ┃  ┣━main.css
+┃  ┃  ┃  ┗━script.js
+┃  ┃  ┗━index.html
+┃  ┣━admin-sites
+┃  ┃  ┣━src
+┃  ┃  ┃  ┗━main.css
+┃  ┃  ┗━index.html
+┃  ┣━info-sites
+┃  ┃  ┣━src
+┃  ┃  ┃  ┗━main.css
+┃  ┃  ┗━index.html
+┃  ┗━test-sites
+┃    ┣━src
+┃    ┃  ┗━main.css
+┃    ┗━index.html
 ┣━src
-┃	┣━images
-┃	┃	┗━header-image.png
-┃	┣━script
-┃	┃	┗━closed.js
-┃	┣━temp
-┃	┃	┣━temp.css
-┃	┃	┗━temp.js
-┃	┣━config.json
-┃	┗━main.css
+┃  ┣━images
+┃  ┃  ┗━header-image.png
+┃  ┣━script
+┃  ┃  ┗━closed.js
+┃  ┣━temp
+┃  ┃  ┣━temp.css
+┃  ┃  ┗━temp.js
+┃  ┣━config.json
+┃  ┗━main.css
 ┣━404.html
 ┣━Closed.html
 ┣━FolderTree.txt
