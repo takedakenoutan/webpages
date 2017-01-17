@@ -18,11 +18,11 @@ webpages(リポジトリのルートディレクトリ)
 ┃	┃	┣━src
 ┃	┃	┃	┗━main.css
 ┃	┃	┗━index.html
-┃	┣━test-sites
+┃	┣━info-sites
 ┃	┃	┣━src
 ┃	┃	┃	┗━main.css
 ┃	┃	┗━index.html
-┃	┗━info-sites
+┃	┗━test-sites
 ┃		┣━src
 ┃		┃	┗━main.css
 ┃		┗━index.html
@@ -34,8 +34,8 @@ webpages(リポジトリのルートディレクトリ)
 ┃	┣━temp
 ┃	┃	┣━temp.css
 ┃	┃	┗━temp.js
-┃	┣━main.css
-┃	┗━config.json
+┃	┣━config.json
+┃	┗━main.css
 ┣━404.html
 ┣━Closed.html
 ┣━README.md
