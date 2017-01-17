@@ -21,9 +21,9 @@ webpages(root)
 ┃  ┃  ┃  ┗━main.css
 ┃  ┃  ┗━index.html
 ┃  ┗━test-sites
-┃    ┣━src
-┃    ┃  ┗━main.css
-┃    ┗━index.html
+┃      ┣━src
+┃      ┃  ┗━main.css
+┃      ┗━index.html
 ┣━src
 ┃  ┣━images
 ┃  ┃  ┗━header-image.png
