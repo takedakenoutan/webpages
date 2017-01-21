@@ -9,9 +9,9 @@ function main(){
 	var cText = 'try{' + nText + '}catch(er){errorEvent(er);}';
 	var scr = document.createElement("script");
 	document.getElementById("display").innerHTML = text;
+	document.getElementById("error").innerHTML = "None";
 	scr.innerHTML = cText;
 	document.getElementById("scr").appendChild(scr);
-	document.getElementById("error").innerHTML = None;
 }
 
 function errorEvent(er){
