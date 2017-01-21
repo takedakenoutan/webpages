@@ -6,8 +6,10 @@ function debug(){
 function main(){
 	var text = debug();
 	var cText = "try{" + text + "}catch(er){errorEvent(er);}";
-	var sText = "<script>" + cText + "</script>"
-	document.getElementById("display").innerHTML = sText;
+	var scr = document.createElement("script");
+	document.getElementById("display").innerHTML = Text;
+	scr.innerHTML = cText;
+	document.getElementById("scr").appendChild(scr);
 	document.getElementById("error").innerHTML = None;
 }
 
