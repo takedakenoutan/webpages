@@ -6,4 +6,5 @@ function debug(){
 function main(){
 	var text = debug();
 	document.getElementById("display").innerHTML = text;
-}
+	eval(text);
+	}
