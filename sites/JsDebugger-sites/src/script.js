@@ -5,10 +5,11 @@ function debug(){
 
 function main(){
 	var text = debug();
-	var cText = "try{" + text + "}catch(er){errorEvent(er);}";
+	var nText = text.replace(/<br>/g, "\n");
+	var cText = "try{" + nText + "}catch(er){errorEvent(er);}";
 	var scr = document.createElement("script");
-	document.getElementById("display").innerHTML = Text;
-	scr.innerHTML = cText;
+	document.getElementById("display").innerHTML = text;
+	scr.innerHTML = nText;
 	document.getElementById("scr").appendChild(scr);
 	document.getElementById("error").innerHTML = None;
 }
