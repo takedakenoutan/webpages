@@ -8,7 +8,7 @@ function main(){
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = None;
 	var ct = text.replace(/<br>/g, '')
-	eval("try{" + text + "}catch(er){errorEvent(er);}");
+	eval("try{" + ct + "}catch(er){errorEvent(er);}");
 }
 
 function errorEvent(er){
