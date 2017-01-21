@@ -1,5 +1,5 @@
 function debug(){
-	var str = document.input.code.value;
+	var str = (document.input.code.value).replace(/\r?\n/g, '<br>');
 	return str;
 }
 
