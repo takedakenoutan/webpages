@@ -7,6 +7,7 @@ function main(){
 	var text = debug();
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = None;
+	var ct = text.replace(/<br>/g, '')
 	eval("try{" + text + "}catch(er){errorEvent(er);}");
 }
 
