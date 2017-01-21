@@ -6,5 +6,10 @@ function debug(){
 function main(){
 	var text = debug();
 	document.getElementById("display").innerHTML = text;
-	eval(text);
-	}
+	eval("try{" + text + "}catch(er){errorEvent(er);}");
+}
+
+function errorEvent(er){
+	var erText = "ErrorType:" + er.name + "\nErrorMessage:" + er.message;
+	document.getElementById("error").innerHTML = erText;
+}
