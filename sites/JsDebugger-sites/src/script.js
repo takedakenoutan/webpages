@@ -13,3 +13,8 @@ function main(){
 	document.getElementById("scr").appendChild(scr);
 	document.getElementById("error").innerHTML = None;
 }
+
+function errorEvent(er){
+var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
+document.getElementById("error").innerHTML = erText;
+}
