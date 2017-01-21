@@ -8,6 +8,13 @@
 	</head>
 	<body>
 		JsDebugger - ver.0.0.1
-		<div id= "inputCode"><script>inputCode();</script></div>
+		<form name= "input">
+			<textarea id= "code" placeholder= "Input the code." required autofocus></textarea>
+			<input type= "button" value= "Debug" onClick= "main();">
+		</form>
+		<p>
+			Result.
+			<div id= "display"></div>
+		</p>
 	</body>
 </html>
