@@ -1,6 +1,6 @@
 function debug(){
 	var str = (document.input.code.value).replace(/\r?\n/g, '<br>');
-	str = str.replace(/\t/g, "    ");
+	str = str.replace(/	/g, "    ");
 	return str;
 }
 
@@ -16,6 +16,6 @@ function main(){
 }
 
 function errorEvent(er){
-var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
-document.getElementById("error").innerHTML = erText;
+	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
+	document.getElementById("error").innerHTML = erText;
 }
