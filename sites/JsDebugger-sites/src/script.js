@@ -1,6 +1,7 @@
 function debug(){
 	var str = (document.input.code.value).replace(/\r?\n/g, '<br>');
 	str = str.replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");
+	         .replace(/ /g, "&nbsp;");
 	return str;
 }
 
