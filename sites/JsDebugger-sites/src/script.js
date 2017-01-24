@@ -1,7 +1,7 @@
 function main(){
 	var str = document.input.code.value;
 	var text = string.text(str);
-	var cText = string.code;
+	var cText = string.code(str);
 	var scr = document.createElement("script");
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = "None";
