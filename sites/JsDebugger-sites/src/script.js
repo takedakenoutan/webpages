@@ -11,7 +11,8 @@ function main(){
 
 var string = {
 	"code" : function(str){
-		return 'try{' + str + '}catch(er){errorEvent(er);}';
+		var text = 'try{' + str + '}catch(er){errorEvent(er);}';
+		return text;
 	},
 	"text" : function(str){
 		return str.replace(/\r?\n/g, '<br>')
