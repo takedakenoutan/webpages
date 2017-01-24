@@ -1,20 +1,24 @@
-function debug(){
-	var str = (document.input.code.value).replace(/\r?\n/g, '<br>');
-	str = str.replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;");
-	str = str.replace(/ /g, "&nbsp;");
-	return str;
-}
-
 function main(){
-	var text = debug();
-	var nText = text.replace(/<br>/g, "\n");
-	var cText = 'try{' + nText + '}catch(er){errorEvent(er);}';
+	var str = document.input.code.value;
+	var text = string.text(str);
+	var cText = string.code;
 	var scr = document.createElement("script");
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = "None";
 	scr.innerHTML = cText;
 	document.getElementById("scr").appendChild(scr);
 }
+
+var string = {
+	"code" : function(str){
+		return 'try{' + str + '}catch(er){errorEvent(er);}';
+	},
+	"text" : function(str){
+		return str.replace(/\r?\n/g, '<br>')
+				  .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;")
+				  .replace(/ /g, "&nbsp;");
+	}
+};
 
 function errorEvent(er){
 	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
