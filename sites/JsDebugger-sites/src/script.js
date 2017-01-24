@@ -10,7 +10,7 @@ function main(){
 	var nText = text.replace(/<br>/g, "\n");
 	var cText = 'try{' + nText + '}catch(er){errorEvent(er);}';
 	var scr = document.createElement("script");
-	document.getElementById("display").innerHTML = text;
+	document.getElementById("display").innerHTML = cText;
 	document.getElementById("error").innerHTML = "None";
 	scr.innerHTML = cText;
 	document.getElementById("scr").appendChild(scr);
