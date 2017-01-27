@@ -6,7 +6,7 @@ function main(){
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = "None";
 	document.getElementById("scr").appendChild(scr);
-	scr.addEventListener("onerror", errorEvent, false);
+	scr.addEventListener("error", errorEvent, false);
 	scr.innerHTML = cText;
 }
 
@@ -32,4 +32,5 @@ window.alert("errorEvent");
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var error = string.error(text);
+	return true;
 }
