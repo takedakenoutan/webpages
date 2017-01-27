@@ -27,9 +27,9 @@ var string = {
 
 var errorEvent = function(er){
 window.alert("errorEvent");
-/*	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
+	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
 	document.getElementById("error").innerHTML = erText;
-	var str = document.input.code.value;
+/*	var str = document.input.code.value;
 	var text = string.text(str);
 	var error = string.error(text);*/
 }
