@@ -11,17 +11,23 @@ function main(){
 
 var string = {
 	"code" : function(str){
-		var text = 'try{' + str + '}catch(er){errorEvent(er);}';
+		var text = str + '\nwindow.onerror = function(msg, file, line, column, er){errorEvent(msg, file, line, column, er)}';
 		return text;
 	},
 	"text" : function(str){
 		return str.replace(/\r?\n/g, '<br>')
 				  .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;")
 				  .replace(/ /g, "&nbsp;");
+	},
+	"error" : function(str){
+		return str.split("\n");
 	}
 };
 
-function errorEvent(er){
+function errorEvent(msg, file, line, column, er){
 	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
 	document.getElementById("error").innerHTML = erText;
+	var str = document.input.code.value;
+	var text = string.text(str);
+	var error = string.error(text);
 }
