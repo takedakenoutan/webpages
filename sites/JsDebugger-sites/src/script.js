@@ -26,7 +26,7 @@ var string = {
 };
 
 var errorEvent = function(er){
-	var erText = "<font color= 'red'>Error:" + er.lineno + "</font>";
+	var erText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
 	document.getElementById("error").innerHTML = erText;
 /*	var str = document.input.code.value;
 	var text = string.text(str);
