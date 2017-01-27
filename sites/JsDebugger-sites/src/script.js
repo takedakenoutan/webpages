@@ -21,14 +21,27 @@ var string = {
 				  .replace(/ /g, "&nbsp;");
 	},
 	"error" : function(str){
-		return str.split("\n");
+		return str.split("<br>");
 	}
 };
 
 var errorEvent = function(er){
 	var erText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
 	document.getElementById("error").innerHTML = erText;
-/*	var str = document.input.code.value;
+	var str = document.input.code.value;
 	var text = string.text(str);
-	var error = string.error(text);*/
+	var error = string.error(text);
+	var num = er.lineno - 1;
+	var eText = [];
+	eText.push(error.forEach(forStr, num));
+	document.getElementById("display").innerHTML = eText;
+}
+
+function forStr(value, index, array){
+	var str;
+	if(index == value){
+		str = "<font color= 'red'>" + array[index] + "</font>";
+	}
+	str = array[index] + "<br>";
+	return str;
 }
