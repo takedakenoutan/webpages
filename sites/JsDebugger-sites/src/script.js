@@ -33,15 +33,17 @@ var errorEvent = function(er){
 	var error = string.error(text);
 	var num = er.lineno - 1;
 	var eText = [];
-	eText.push(error.forEach(forStr, num));
+	for(var i = 0;i < error.length;i++){
+		var str;
+		if(i == num){
+			str = "<font color= 'red'>" + error[i] + "</font>";
+		}
+		str = array[i] + "<br>";
+		eText.push(str);
+	}
 	document.getElementById("display").innerHTML = eText;
 }
 
 function forStr(value, index, array){
-	var str;
-	if(index == this){
-		str = "<font color= 'red'>" + array[index] + "</font>";
-	}
-	str = array[index] + "<br>";
-	return str;
+	
 }
