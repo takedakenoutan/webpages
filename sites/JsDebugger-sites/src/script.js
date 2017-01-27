@@ -1,17 +1,18 @@
 function main(){
+	window.addEventListener("error", function(){window.alert("りすな");}, false);
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var cText = string.code(str);
 	var scr = document.createElement("script");
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = "None";
-	document.getElementById("scr").appendChild(scr);
 	scr.innerHTML = cText;
+	document.getElementById("scr").appendChild(scr);
 }
 
 var string = {
 	"code" : function(str){
-		var text = str + "window.onerror = function(msg, file, line, column, er){errorEvent(msg, file, line, column, er);}";
+		var text = str;
 		return text;
 	},
 	"text" : function(str){
