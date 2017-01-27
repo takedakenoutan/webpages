@@ -5,9 +5,9 @@ function main(){
 	var scr = document.createElement("script");
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = "None";
-	scr.addEventListener("onerror", errorEvent);
-	scr.innerHTML = cText;
 	document.getElementById("scr").appendChild(scr);
+	scr.addEventListener("onerror", errorEvent, false);
+	scr.innerHTML = cText;
 }
 
 var string = {
