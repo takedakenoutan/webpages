@@ -6,13 +6,12 @@ function main(){
 	document.getElementById("display").innerHTML = text;
 	document.getElementById("error").innerHTML = "None";
 	document.getElementById("scr").appendChild(scr);
-	scr.addEventListener("error", errorEvent, false);
 	scr.innerHTML = cText;
 }
 
 var string = {
 	"code" : function(str){
-		var text = str;
+		var text = str + "window.onerror = function(msg, file, line, column, er){errorEvent(msg, file, line, column, er);}";
 		return text;
 	},
 	"text" : function(str){
@@ -32,5 +31,4 @@ window.alert("errorEvent");
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var error = string.error(text);
-	return true;
 }
