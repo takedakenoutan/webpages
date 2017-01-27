@@ -39,7 +39,7 @@ var errorEvent = function(er){
 
 function forStr(value, index, array){
 	var str;
-	if(index == value){
+	if(index == this){
 		str = "<font color= 'red'>" + array[index] + "</font>";
 	}
 	str = array[index] + "<br>";
