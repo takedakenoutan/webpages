@@ -25,7 +25,7 @@ var string = {
 	}
 };
 
-function errorEvent(msg, file, line, column, er){
+function errorEvent(er){
 window.alert("errorEvent");
 	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
 	document.getElementById("error").innerHTML = erText;
