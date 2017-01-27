@@ -1,5 +1,5 @@
 function main(){
-	window.addEventListener("error", errorEvent(msg, file, line, column, er), false);
+	window.addEventListener("error", errorEvent(er), false);
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var cText = string.code(str);
