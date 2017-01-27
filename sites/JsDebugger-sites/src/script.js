@@ -1,5 +1,5 @@
 function main(){
-	window.addEventListener("error", function(){window.alert("りすな");}, false);
+	window.addEventListener("error", errorEvent(msg, file, line, column, er), false);
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var cText = string.code(str);
