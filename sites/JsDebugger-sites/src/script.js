@@ -1,5 +1,5 @@
 function main(){
-	window.addEventListener("error", errorEvent(er), false);
+	window.addEventListener("error", errorEvent, false);
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var cText = string.code(str);
@@ -25,11 +25,11 @@ var string = {
 	}
 };
 
-function errorEvent(er){
+var errorEvent = function(er){
 window.alert("errorEvent");
-	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
+/*	var erText = "<font color= 'red'>ErrorType:" + er.name + "<br>ErrorMessage:" + er.message + "</font>";
 	document.getElementById("error").innerHTML = erText;
 	var str = document.input.code.value;
 	var text = string.text(str);
-	var error = string.error(text);
+	var error = string.error(text);*/
 }
