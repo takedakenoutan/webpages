@@ -33,6 +33,7 @@ var errorEvent = function(er){
 	var error = string.error(text);
 	var num = er.lineno - 1;
 	var eText = [];
+	window.alert(1);
 	for(var i = 0;i < error.length;i++){
 		var str;
 		if(i == num){
@@ -41,6 +42,8 @@ var errorEvent = function(er){
 		str = array[i] + "<br>";
 		eText.push(str);
 	}
+	window.alert(2);
 	eText.join("");
 	document.getElementById("display").innerHTML = eText;
+	window.alert(3);
 }
