@@ -36,16 +36,19 @@ var errorEvent = function(er){
 	disp.innerHTML = "";
 	for(var i = 0;i < error.length;i++){
 		if(i == num){
+			var strong = document.createElement("strong");
 			var font = document.createElement("font");
 			font.setAttribute("color", "red");
 			var eStr = document.createTextNode(error[i]);
 			font.appendChild(eStr);
-			disp.appendChild(font);
+			strong.appendChild(font);
+			disp.appendChild(strong);
 		}else{
 			var dText = document.createTextNode(error[i]);
 			disp.appendChild(dText);
 		}
 		if(i != (error.length) - 1){
+			var br = document.createElement("br");
 			disp.appendChild(br);
 		}
 	}
