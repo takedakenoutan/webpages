@@ -26,8 +26,17 @@ var string = {
 };
 
 var errorEvent = function(er){
-	var erText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
-	document.getElementById("error").innerHTML = erText;
+	var div = document.getElementById("error");
+	div.innerHTML = "";
+	var br = document.createElement("br");
+	var font = document.createElement("font");
+	font.setAttribute("color", "red");
+	var eMessage.create.TextNode("Error:" + er.message);
+	var eLine.create.TextNode("Line:" + er.lineno);
+	font.appendChild(eMessage);
+	font.appendChild(br);
+	font.appendChild(eLine);
+	div.appendChild(font);
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var error = string.error(text);
@@ -36,17 +45,16 @@ var errorEvent = function(er){
 	disp.innerHTML = "";
 	for(var i = 0;i < error.length;i++){
 		if(i == num){
-			var font = document.createElement("font");
-			font.setAttribute("color", "red");
+			var strong = document.createElement("strong");
 			var eStr = document.createTextNode(error[i]);
 			font.appendChild(eStr);
-			disp.appendChild(font);
+			strong.appendChild(font);
+			disp.appendChild(strong);
 		}else{
 			var dText = document.createTextNode(error[i]);
 			disp.appendChild(dText);
 		}
 		if(i != (error.length) - 1){
-			var br = document.createElement("br");
 			disp.appendChild(br);
 		}
 	}
