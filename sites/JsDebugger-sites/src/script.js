@@ -41,9 +41,6 @@ var errorEvent = function(er){
 		str = array[i] + "<br>";
 		eText.push(str);
 	}
+	eText.join("");
 	document.getElementById("display").innerHTML = eText;
-}
-
-function forStr(value, index, array){
-	
 }
