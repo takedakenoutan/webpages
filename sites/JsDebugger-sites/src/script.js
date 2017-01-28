@@ -39,14 +39,19 @@ var errorEvent = function(er){
 		var str;
 		if(i == num){
 			str = "<font color= 'red'>" + error[i] + "</font>";
+		}else{
+			str = error[i];
 		}
-		str = error[i] + "<br>";
 		eText.push(str);
 	}
 	window.alert(2);
 	for(var i = 0;i < eText.length;i++){
 		var dText = document.createTextNode(eText[i]);
 		disp.appendChild(dText);
+		if(i != (eText.length) - 1){
+			var br = document.createElement("br");
+			disp.appendChild(br);
+		}
 	}
 	window.alert(3);
 }
