@@ -34,6 +34,7 @@ var errorEvent = function(er){
 	var num = er.lineno - 1;
 	var eText = [];
 	window.alert(1);
+	var disp = document.getElementById("display");
 	for(var i = 0;i < error.length;i++){
 		var str;
 		if(i == num){
@@ -43,7 +44,9 @@ var errorEvent = function(er){
 		eText.push(str);
 	}
 	window.alert(2);
-	eText.join("");
-	document.getElementById("display").innerHTML = eText;
+	for(var i = 0;i < eText.length;i++){
+		var dText = document.createTextNode(eText[i]);
+		disp.appendChild(dText);
+	}
 	window.alert(3);
 }
