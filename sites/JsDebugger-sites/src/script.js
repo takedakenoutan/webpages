@@ -32,7 +32,6 @@ var errorEvent = function(er){
 	var text = string.text(str);
 	var error = string.error(text);
 	var num = er.lineno - 1;
-	window.alert(1);
 	var disp = document.getElementById("display");
 	disp.innerHTML = "";
 	for(var i = 0;i < error.length;i++){
@@ -51,5 +50,4 @@ var errorEvent = function(er){
 			disp.appendChild(br);
 		}
 	}
-	window.alert(3);
 }
