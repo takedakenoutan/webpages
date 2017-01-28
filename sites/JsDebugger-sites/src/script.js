@@ -36,13 +36,11 @@ var errorEvent = function(er){
 	disp.innerHTML = "";
 	for(var i = 0;i < error.length;i++){
 		if(i == num){
-			var strong = document.createElement("strong");
 			var font = document.createElement("font");
 			font.setAttribute("color", "red");
 			var eStr = document.createTextNode(error[i]);
 			font.appendChild(eStr);
-			strong.appendChild(font);
-			disp.appendChild(strong);
+			disp.appendChild(font);
 		}else{
 			var dText = document.createTextNode(error[i]);
 			disp.appendChild(dText);
