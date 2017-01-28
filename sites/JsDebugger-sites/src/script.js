@@ -32,23 +32,21 @@ var errorEvent = function(er){
 	var text = string.text(str);
 	var error = string.error(text);
 	var num = er.lineno - 1;
-	var eText = [];
 	window.alert(1);
 	var disp = document.getElementById("display");
+	disp.innerHTML = "";
 	for(var i = 0;i < error.length;i++){
-		var str;
 		if(i == num){
-			str = "<font color= 'red'>" + error[i] + "</font>";
+			var font = document.createElement("font");
+			font.setAttribute("color", "red");
+			var eStr = document.createTextNode(error[i]);
+			font.appendChild(eStr);
+			disp.appendChild(font);
 		}else{
-			str = error[i];
+			var dText = document.createTextNode(error[i]);
+			disp.appendChild(dText);
 		}
-		eText.push(str);
-	}
-	window.alert(2);
-	for(var i = 0;i < eText.length;i++){
-		var dText = document.createTextNode(eText[i]);
-		disp.appendChild(dText);
-		if(i != (eText.length) - 1){
+		if(i != (error.length) - 1){
 			var br = document.createElement("br");
 			disp.appendChild(br);
 		}
