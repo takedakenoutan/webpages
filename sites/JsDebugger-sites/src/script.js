@@ -26,17 +26,8 @@ var string = {
 };
 
 var errorEvent = function(er){
-	var div = document.getElementById("error");
-	div.innerHTML = "";
-	var br = document.createElement("br");
-	var dFont = document.createElement("font");
-	dFont.setAttribute("color", "red");
-	var eMessage = document.create.TextNode("Error:" + er.message);
-	var eLine = document.create.TextNode("Line:" + er.lineno);
-	dFont.appendChild(eMessage);
-	dFont.appendChild(br);
-	dFont.appendChild(eLine);
-	div.appendChild(dFont);
+	var erText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
+	document.getElementById("error").innerHTML = erText;
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var error = string.error(text);
