@@ -39,7 +39,7 @@ var errorEvent = function(er){
 		if(i == num){
 			str = "<font color= 'red'>" + error[i] + "</font>";
 		}
-		str = array[i] + "<br>";
+		str = error[i] + "<br>";
 		eText.push(str);
 	}
 	window.alert(2);
