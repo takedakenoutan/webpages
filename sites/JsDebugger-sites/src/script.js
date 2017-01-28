@@ -31,8 +31,8 @@ var errorEvent = function(er){
 	var br = document.createElement("br");
 	var font = document.createElement("font");
 	font.setAttribute("color", "red");
-	var eMessage.create.TextNode("Error:" + er.message);
-	var eLine.create.TextNode("Line:" + er.lineno);
+	var eMessage = document.create.TextNode("Error:" + er.message);
+	var eLine = document.create.TextNode("Line:" + er.lineno);
 	font.appendChild(eMessage);
 	font.appendChild(br);
 	font.appendChild(eLine);
