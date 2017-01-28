@@ -17,8 +17,8 @@ var string = {
 	},
 	"text" : function(str){
 		return str.replace(/\r?\n/g, '<br>')
-				  .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;")
-				  .replace(/ /g, "&nbsp;");
+				  .replace(/\t/g, "\u0020\u0020\u0020\u0020")
+				  .replace(/ /g, "\u0020");
 	},
 	"error" : function(str){
 		return str.split("<br>");
