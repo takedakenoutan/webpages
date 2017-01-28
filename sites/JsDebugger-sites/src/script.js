@@ -29,14 +29,14 @@ var errorEvent = function(er){
 	var div = document.getElementById("error");
 	div.innerHTML = "";
 	var br = document.createElement("br");
-	var font = document.createElement("font");
-	font.setAttribute("color", "red");
+	var dFont = document.createElement("font");
+	dFont.setAttribute("color", "red");
 	var eMessage = document.create.TextNode("Error:" + er.message);
 	var eLine = document.create.TextNode("Line:" + er.lineno);
-	font.appendChild(eMessage);
-	font.appendChild(br);
-	font.appendChild(eLine);
-	div.appendChild(font);
+	dFont.appendChild(eMessage);
+	dFont.appendChild(br);
+	dFont.appendChild(eLine);
+	div.appendChild(dFont);
 	var str = document.input.code.value;
 	var text = string.text(str);
 	var error = string.error(text);
@@ -46,6 +46,8 @@ var errorEvent = function(er){
 	for(var i = 0;i < error.length;i++){
 		if(i == num){
 			var strong = document.createElement("strong");
+			var font = document.createElement("font");
+			font.setAttribute("color", "red");
 			var eStr = document.createTextNode(error[i]);
 			font.appendChild(eStr);
 			strong.appendChild(font);
