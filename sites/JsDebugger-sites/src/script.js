@@ -29,7 +29,7 @@ var errorEvent = function(er){
 	var erText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
 	document.getElementById("error").innerHTML = erText;
 	var str = document.input.code.value;
-	var text = string.text(str).replace(/&nbsp;/g, "\u0020");
+	var text = string.text(str).replace(/&nbsp;/g, "\u00a0");
 	var error = string.error(text);
 	var num = er.lineno - 1;
 	var disp = document.getElementById("display");
