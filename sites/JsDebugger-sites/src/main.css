@@ -1,14 +1,14 @@
 @charset "UTF-8";
 
 *{
-	width:400px;
+	width:1200;
 	font-family:'Anonymous Pro', monospace;
-	font-size:10px;
+	font-size:30px;
 }
 
 textarea#code{
-	width:400px;
-	height:200px;
+	width:1200px;
+	height:600px;
 	font-family:'Anonymous Pro', monospace;
-	font-size:7px;
+	font-size:21px;
 }
