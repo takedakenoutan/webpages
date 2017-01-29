@@ -3,12 +3,12 @@
 *{
 	width:100%;
 	font-family:'Anonymous Pro', monospace;
-	font-size:2.5%;
+	font-size:5%;
 }
 
 textarea#code{
 	width:100%;
-	height:30%;
+	height:50px;
 	font-family:'Anonymous Pro', monospace;
-	font-size:2%;
+	font-size:4%;
 }
