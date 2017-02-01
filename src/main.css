@@ -2,7 +2,7 @@
 
 /*メインコンテンツ*/
 article#text{
-	max-width:520px;
+	max-width:500px;
 	float : right;
 	margin : 10px;
 }
