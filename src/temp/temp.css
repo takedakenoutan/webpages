@@ -2,15 +2,16 @@
 
 /*全体*/
 *{
+	color: #000000;
+	margin: 10px;
+}
+body{
 	width:1200;
-	margin:10px;
-	color:#000000;
-	background-color:#a6a6a6;
+	background-color: #a6a6a6;
 }
 /*ヘッダー*/
 h1#h-title{
 	padding:30px;
-	color:#ffffff;
 	background-image:url("../images/header-image.png");
 	background-repeat:no-repeat;
 }
