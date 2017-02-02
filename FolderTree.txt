@@ -7,6 +7,11 @@ webpages(root)
 ┃  ┃  ┣━src
 ┃  ┃  ┃  ┗━main.css
 ┃  ┃  ┗━index.html
+┃  ┣━JsDebugger-sites
+┃  ┃  ┣━src
+┃  ┃  ┃  ┣━main.css
+┃  ┃  ┃  ┗━script.js
+┃  ┃  ­­┗━index.html­
 ┃  ┣━URLShortener-sites
 ┃  ┃  ┣━src
 ┃  ┃  ┃  ┣━main.css
