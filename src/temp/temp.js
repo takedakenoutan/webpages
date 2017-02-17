@@ -11,7 +11,8 @@ function navi(){
 		text += '<li id= "menu03"><a href= "https://takedakenoutan.github.io/webpages/sites/info-sites/">自己紹介とか</a></li><br>';
 		text += '<li id= "menu04"><a href= "https://takedakenoutan.github.io/webpages/sites/admin-sites/">管理ページ</a></li><br>';
 		text += '<li id= "menu05"><a href= "https://takedakenoutan.github.io/webpages/sites/AccessRestriction-sites/">AccessRestriction</a></li><br>';
-		text += '<li id= "menu06"><a href= "https://takedakenoutan.github.io/webpages/sites/URLShortener-sites/">URLShortener</a></li>';
+		text += '<li id= "menu06"><a href= "https://takedakenoutan.github.io/webpages/sites/URLShortener-sites/">URLShortener</a></li><br>';
+		text += '<li id= "menu07"><a href= "https://takedakenoutan.github.io/webpages/sites/JsDebugger-release/">JsDebugger</a></li>';
 	text += '</ul>';
 	document.getElementById("navi").innerHTML = text;
 }
