@@ -1,6 +1,4 @@
-フォルダー パスの一覧
-ボリューム シリアル番号は 00000200 B61B:86ED です
-C:.
+.
 |   404.html
 |   Closed.html
 |   favicon.ico
