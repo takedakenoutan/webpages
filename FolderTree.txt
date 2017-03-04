@@ -77,3 +77,90 @@ C:.
             temp.css
             temp.js
             
+フォルダー パスの一覧
+ボリューム シリアル番号は 00000200 B61B:86ED です
+C:.
+|   404.html
+|   Closed.html
+|   favicon.ico
+|   FolderTree.txt
+|   index.html
+|   README.md
+|   Redirect.html
+|   testing.html
+|   
++---Release
+|       AccessRestriction.js
+|       URLShortener.js
+|       
++---sites
+|   +---AccessRestriction-sites
+|   |   |   index.html
+|   |   |   
+|   |   \---src
+|   |           main.css
+|   |           
+|   +---admin-sites
+|   |   |   index.html
+|   |   |   
+|   |   \---src
+|   |           main.css
+|   |           
+|   +---info-sites
+|   |   |   index.html
+|   |   |   
+|   |   \---src
+|   |           main.css
+|   |           
+|   +---JsDebugger-release
+|   |   |   index.html
+|   |   |   
+|   |   +---JsDebugger_1.0
+|   |   |   |   index.html
+|   |   |   |   
+|   |   |   \---src
+|   |   |           main.css
+|   |   |           
+|   |   +---JsDebugger_1.1.0.0
+|   |   |   |   index.html
+|   |   |   |   
+|   |   |   \---src
+|   |   |           main.css
+|   |   |           
+|   |   \---src
+|   |           main.css
+|   |           
+|   +---JsDebugger-sites
+|   |   |   index.html
+|   |   |   
+|   |   \---src
+|   |           main.css
+|   |           script.js
+|   |           
+|   +---test-sites
+|   |   |   index.html
+|   |   |   
+|   |   \---src
+|   |           main.css
+|   |           
+|   \---URLShortener-sites
+|       |   index.html
+|       |   
+|       \---src
+|               main.css
+|               script.js
+|               
+\---src
+    |   config.json
+    |   main.css
+    |   
+    +---images
+    |       header-image.png
+    |       
+    +---script
+    |       closed.js
+    |       
+    \---temp
+            temp.css
+            temp.js
+            
