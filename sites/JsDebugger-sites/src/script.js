@@ -57,9 +57,24 @@ var _takedake_app_JsDebugger = (function(){
 			}
 		}
 	};
+	var _changeDisp = function(){
+		var disp = document.getElementById("display");
+		var error = document.getElementById("error");
+		var btn = document.getElementById("changeButton");
+		disp.style.display = "none";
+		error.style.display = "none";
+		if(btn.value == "Result."){
+			btn.value = "Error.";
+			error.style.display = "block";
+		}else if(btn.value == "Error."){
+			btn.value = "Result.";
+			disp.style.display = "block";
+		}
+	};
 	return {
 		main : _main,
 		string : _string,
 		errorEvent : _errorEvent,
+		changeDisp : _changeDisp
 	};
 })();
