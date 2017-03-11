@@ -1,0 +1,8 @@
+@cherset "UTF-8";
+
+/*メインコンテンツ*/
+article#text{
+	max-width:500px;
+	float: right;
+	margin: 10px;
+}
