@@ -6,6 +6,7 @@ function __takedake_app_JsDebugger(){
 	this.scr = () => document.getElementById("scr");
 	this.display = () => document.getElementById("display");
 	this.error = () => document.getElementById("error");
+	this.changeButton = () => document.getElementById("changeButton");
 	window.addEventListener("error", this.errorEvent.bind(this), false);
 }
 
