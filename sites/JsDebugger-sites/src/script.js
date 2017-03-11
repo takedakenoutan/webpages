@@ -1,66 +1,72 @@
-var _takedake_app_JsDebugger = (function(){
-	var _main = function(){
-		window.addEventListener("error", _takedake_app_JsDebugger.errorEvent, false);
-		var str = document.input.code.value;
-		var text = _takedake_app_JsDebugger.string.text(str);
-		var cText = _takedake_app_JsDebugger.string.code(str);
-		var scr = document.createElement("script");
-		document.getElementById("display").innerHTML = text;
-		document.getElementById("error").innerHTML = "None";
-		scr.innerHTML = cText;
-		document.getElementById("scr").appendChild(scr);
-	};
-	var _string = (function(){
-		var _code = function(str){
-			var text = str;
-			return text;
-		};
-		var _text = function(str){
-			return str.replace(/\r?\n/g, '<br>')
-					  .replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;")
-					  .replace(/ /g, "&nbsp;");
-		};
-		var _error = function(str){
+function __takedake_app_JsDebugger(){
+	this.codeValue = () => document.input.code.value;
+	this.dispText = () => this.string.disp.call(this, this.codeValue());
+	this.codeText = () => this.string.code.call(this, this.codeValue());
+	this.errorText = (str) => this.string.error.call(this, str);
+	this.scr = () => document.getElementById("scr");
+	this.display = () => document.getElementById("display");
+	this.error = () => document.getElementById("error");
+	window.addEventListener("error", this.errorEvent.bind(this), false);
+}
+
+__takedake_app_JsDebugger.prototype = {
+	main : function(){
+		let dispText = this.dispText();
+		let codeText = this.codeText();
+		let doScript = document.getElementById("doScript");
+		if(doScript){
+			this.scr().removeChild(doScript);
+		}
+		doScript = document.createElement("script");
+		doScript.setAttribute("id", "doScript");
+		this.display().innerHTML = dispText;
+		this.error().innerHTML = "None";
+		doScript.innerHTML = codeText;
+		this.scr().appendChild(doScript);
+	},
+	string : {
+		disp : function(str){
+			return str
+				.replace(/\r?\n/g, '<br>')
+				.replace(/\t/g, "&nbsp;&nbsp;&nbsp;&nbsp;")
+				.replace(/ /g, "&nbsp;");
+		},
+		code : function(str){
+			return str;
+		},
+		error : function(str){
 			return str.split("<br>");
-		};
-		return {
-			code : _code,
-			text : _text,
-			error : _error
-		};
-	})();
-	var _errorEvent = function(er){
-		var erText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
-		document.getElementById("error").innerHTML = erText;
-		var str = document.input.code.value;
-		var text = _takedake_app_JsDebugger.string.text(str).replace(/&nbsp;/g, "\u00a0");
-		var error = _takedake_app_JsDebugger.string.error(text);
-		var num = er.lineno - 1;
-		var disp = document.getElementById("display");
-		disp.innerHTML = "";
-		for(var i = 0;i < error.length;i++){
+		},
+	},
+	errorEvent : function(er){
+		let errorText = "<font color= 'red'>Error:" + er.message + "<br>Line:" +er.lineno+ "</font>";
+		this.error().innerHTML = errorText;
+		let dispError = this.errorText((this.dispText()).replace(/&nbsp;/g, "\u00a0"));
+		let num = er.lineno - 1;
+		this.display().innerHTML = "";
+		for(let i = 0; i < dispError.length; i++){
 			if(i == num){
-				var strong = document.createElement("strong");
-				var font = document.createElement("font");
+				let strong = document.createElement("strong");
+				let font = document.createElement("font");
 				font.setAttribute("color", "red");
-				var eStr = document.createTextNode(error[i]);
-				font.appendChild(eStr);
+				let errorText = document.createTextNode(dispError[i]);
+				font.appendChild(errorText);
 				strong.appendChild(font);
-				disp.appendChild(strong);
+				this.display().appendChild(strong);
 			}else{
-				var dText = document.createTextNode(error[i]);
-				disp.appendChild(dText);
+				let dispText = document.createTextNode(dispError[i]);
+				this.display().appendChild(dispText);
 			}
-			if(i != (error.length) - 1){
-				var br = document.createElement("br");
-				disp.appendChild(br);
+			if(i != (error.length - 1)){
+				let br = document.createElement("br");
+				this.display().appendChild(br);
 			}
 		}
-	};
-	var _changeDisp = function(){
-		var disp = document.getElementById("display");
-		var error = document.getElementById("error");
-		var btn = document.getElementById("changeButton");
+	},
+	changeDisp : function(){
+		let disp = this.display();
+		let error = this.error();
+		let btn = this.changeButton();
 		disp.style.display = "none";
 		error.style.display = "none";
 		if(btn.value == "Result."){
@@ -70,11 +76,15 @@ var _takedake_app_JsDebugger = (function(){
 			btn.value = "Result.";
 			disp.style.display = "block";
 		}
-	};
-	return {
-		main : _main,
-		string : _string,
-		errorEvent : _errorEvent,
-		changeDisp : _changeDisp
-	};
-})();
+	},
+	setTab : function(){
+		let tab = "\t";
+		let str = this.codeValue();
+		let cursolePos = document.input.code.selectionStart;
+		let leftText = str.substr(0, cursolePos);
+		let rightText = str.substr(cursolePos, str.length);
+		document.input.code.value = leftText + tab + rightText;
+	}
+};
+
+var _takedake_app_JsDebugger = new __takedake_app_JsDebugger();
